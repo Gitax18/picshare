@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicShare</title>
+     <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <!-- my nav bar css -->
+     <link rel="stylesheet" href="css/navbar.css">
+     <!-- my page css -->
+     <link rel="stylesheet" href="css/chat.css">
+</head>
+<body> 
+     <!-- navigation bar -->
+     <div class="navbar">
+        <nav>
+            <div class="logo" id="logo"><img src="assets/logo.png" id="logopng"><a href="main.html">PicShare</a></div>
+            <input type="text" id="search-bar" placeholder="search">
+            <div class="bar-icons">
+                <ul>
+                    <li><a href="main.html"><ion-icon  name="home-outline" id="home-icon"></ion-icon></a></li>
+                    <li><a href="chat.html"><i class="fa-solid fa-comment fa-lg icon"></i></a></li>
+                    <li> <a href="#"><i class="fa-regular fa-square-plus  fa-lg icon"></i></a></li>
+                    <li> <a href="feed.html"><i class="fa-regular fa-compass fa-lg icon"></i></a></li>
+                    <li> <a href="#"><i class="fa-regular fa-heart fa-lg icon"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-user fa-lg icon"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- main container -->
+    <main>
+        <div class="contacts">
+            <div class="username">
+                <p>Messages</p> 
+            </div>
+            <div class="users">
+                <div class="user-profile">
+                    <div class="dp"><img src="assets/dp's/dp.jpg"></div>
+                    <div class="name"><a href="#"><small>User1</small></a></div>
+                </div>
+                <div class="user-profile">
+                    <div class="dp"><img src="assets/creepymemer/troll-face.gif"></div>
+                    <div class="name"><a href="#"><small>ChankMemer</small></a></div>
+                </div>
+                <div class="user-profile">
+                    <div class="dp"><img src="assets/mydesigns/gradient o logo.png"></div>
+                    <div class="name"><a href="#"><small>GitDesigns</small></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-box">
+            <img src="assets/paper-plane.png" id="paper-icon">
+            <p>Your Messages</p>
+            <small>send private photos and messages to a friend or group</small> <br>
+            <button id="send-msg"><small>send message</small></button>
+        </div>
+
+        <div class="chat-box">
+            <div class="back"><i class="fa-solid fa-chevron-left fa-lg icon" id="back"></i></div>
+            <div class="user-chats" id="user-chats">
+                
+            </div>
+
+            <div class="form">
+                <input type="text" placeholder="enter message" id="type-chat">
+                <input type="submit" id="send-chat" value="Send">
+            </div>
+        </div>
+
+    </main>
+
+     <!-- footer is only for smaller screens -->
+     <footer>
+        <div class="foot-bars">
+            <ul>
+                <li> <a href="main.html"><ion-icon size="large" name="home-outline"></ion-icon></a></li>
+                <li><a href="chat.html"><i class="fa-solid fa-comment fa-2x  icon"></i></a></li>
+                <li> <a href="#"><i class="fa-regular fa-square-plus  fa-2x  icon"></i></a></li>
+                <li> <a href="feed.html"><i class="fa-regular fa-compass fa-2x  icon"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-user fa-2x  icon"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- ION ICONS CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- page js -->
+    <script src="scripts/chat.js"></script>
+</body>
+</html>
+

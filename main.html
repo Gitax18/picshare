@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicShare</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- my nav bar css -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <!-- my page css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <nav>
+            <div class="logo" id="logo"><img src="assets/logo.png" id="logopng"><a href="main.html">PicShare</a></div>
+            <input type="text" id="search-bar" placeholder="search">
+            <div class="bar-icons">
+                <ul>
+                    <li> <a href="main.html"><ion-icon name="home-sharp" id="home-icon"></ion-icon></a></li>
+                    <li><a href="chat.html"><i class="fa-regular fa-comment fa-lg icon"></i></a></li>
+                    <li> <a href="#"><i class="fa-regular fa-square-plus  fa-lg icon"></i></a></li>
+                    <li> <a href="feed.html"><i class="fa-regular fa-compass fa-lg icon"></i></a></li>
+                    <li> <a href="#"><i class="fa-regular fa-heart fa-lg icon"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-user fa-lg icon"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- main container -->
+    <main>
+        <!--suggestions  -->
+        <section class="suggested-profs">
+            <h4>Suggestion For You</h4> 
+            <br>
+            <hr>
+            <!-- suggested profile 1 -->
+            <div class="sugg-profile">
+                <div class="prof-info">
+                    <div>
+                        <a href="#"><img src="assets/dp's/dp.jpg" class="sugg-prof-dp"></a>
+                    </div>
+                    <div class="sugg-prof-name">
+                        <a href="#">user1</a>
+                    </div>
+                </div>
+                <button class="blue-button btn-follow" id="a">Follow</button>
+            </div>
+            <hr>
+            <!-- suggested profile 2 -->
+            <div class="sugg-profile">
+                <div class="prof-info">
+                    <div>
+                       <a href="profile-1.html"><img src="assets/mydesigns/gradient o logo.png" class="sugg-prof-dp"></a> 
+                    </div>
+                    <div class="sugg-prof-name">
+                        <a href="profile-1.html">GitDesigns</a>
+                    </div>
+                </div>
+                <button class="blue-button btn-follow" >Follow</button>
+            </div>
+        </section>
+        <!-- posts -->
+        <section class="new-posts">
+            <!-- post 1 -->
+            <div>
+                <div class="post-head">
+                    <div class="profile-info">
+                        <!-- editable:  profile image and username -->
+                        <img src="assets/creepymemer/dp.png" id="user-dp">
+                        <a href="profile-2.html">ChankMemer</a>
+                    </div>
+                    <div>
+                        <button id="ver-ell-icon">ooo</button>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <div class="post-container">
+                        <!-- editable:  post img comes here -->
+                        <img src="assets/creepymemer/meme.jpg" alt="">
+                    </div>
+
+                    <div class="post-icons">
+                        <div>
+                            <i class="fa-regular fa-heart fa-lg icon likes"></i>
+                            <i class="fa-regular fa-comment fa-lg icon"></i>
+                            <i class="fa-regular fa-paper-plane fa-lg icon"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark fa-lg icon"></i>
+                    </div>
+
+                    <div class="post-desc">
+                        <!-- editable:   description of the post and upload time -->
+                        <p>🤣Enjoy Your Exams.</p>
+                        <small>5 days ago</small>
+                    </div>
+                    <hr>
+                    <div class="post-footer">
+                        <div class="add-comment">
+                            <i class="fa-regular fa-face-smile fa-lg icon"></i>
+                            <input type="text" placeholder="Add a Comment..." class="comment-input" >
+                        </div>
+                        <button class="blue-button-post btn-post">post</button>
+                    </div>
+                </div>
+            </div>
+            <!-- post 2 -->
+            <div>
+                <div class="post-head">
+                    <div class="profile-info">
+                        <!-- editable:  profile image and username -->
+                        <img src="assets/mydesigns/gradient o logo.png" id="user-dp">
+                        <a href="profile-1.html">GitDesigns</a>
+                    </div>
+                    <div>
+                        <button id="ver-ell-icon">ooo</button>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <div class="post-container">
+                        <!-- editable:  post img comes here -->
+                        <img src="assets/mydesigns/tony vexel art1.jpg" alt="">
+                    </div>
+
+                    <div class="post-icons">
+                        <div>
+                            <i class="fa-regular fa-heart fa-lg icon likes"></i>
+                            <i class="fa-regular fa-comment fa-lg icon"></i>
+                            <i class="fa-regular fa-paper-plane fa-lg icon"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark fa-lg icon"></i>
+                    </div>
+
+                    <div class="post-desc">
+                        <!-- editable:   description of the post and upload time -->
+                        <p>Tony stark vector art created by Gitanshu.</p>
+                        <small>1 days ago</small>
+                    </div>
+                    <hr>
+                    <div class="post-footer">
+                        <div class="add-comment">
+                            <i class="fa-regular fa-face-smile fa-lg icon"></i>
+                            <input type="text" placeholder="Add a Comment..." class="comment-input" >
+                        </div>
+                        <button class="blue-button-post btn-post">post</button>
+                    </div>
+                </div>
+            </div>
+            <!-- post 3 -->
+            
+        </section>
+        
+    </main>
+    <!-- footer is only for smaller screens -->
+    <footer>
+        <div class="foot-bars">
+            <ul>
+                <li> <a href="main.html"><ion-icon size="large" name="home-sharp"></ion-icon></a></li>
+                <li><a href="chat.html"><i class="fa-regular fa-comment fa-2x  icon"></i></a></li>
+                <li> <a href="#"><i class="fa-regular fa-square-plus  fa-2x  icon"></i></a></li>
+                <li> <a href="feed.html"><i class="fa-regular fa-compass fa-2x  icon"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-user fa-2x  icon"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <!-- ion icon cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

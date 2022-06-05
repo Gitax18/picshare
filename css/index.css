@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'billabong';
+    src: url("fonts/billabong.ttf") format('truetype'); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    margin: 0 10vw 0 10vw;
+
+}
+
+#logo{
+    font-size: 4rem;
+    font-family: 'billabong';
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.left{
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#pic{
+    height: 90%;
+    width: auto;
+    margin: 0 20px;
+}
+
+@media (max-width:800px) {
+    .left{
+        display: none;
+    }
+}
+
+.right{
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+small{
+    color: #b10000;
+}
+
+#warning{
+    visibility: hidden;
+}
+
+.form{
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+input,button{
+    margin: 3px 0;
+    height: 30px;
+    background-color: rgb(229, 229, 229);
+    border: none;
+    padding: 0 3px;
+}
+input{
+    border: 1px solid rgb(162, 162, 162);
+}
+
+input:focus{
+    outline: none;
+}
+
+
+#login{
+    height: 30px;
+    background-color: #B2DFFC;
+    color: white;
+    font-weight: 600; 
+}
+
+.signupform{
+    text-align: center;
+    padding: 20px 5px;
+    border: 1px solid black;
+}
+
+
+
+@media (max-width:800px) {
+    main{
+        margin: auto;
+    }
+    .right{
+        width: 100vw;
+        height: 100vh;
+        background-color: #fafafa;
+    }
+
+    .form{
+        width:50vw;
+        background-color: #ffffff;
+    }
+    .signupform{
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width:400px) {
+    .form{
+        width: 85vw;
+    }
+}

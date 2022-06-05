@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,strong{
+    font-family: sans-serif;
+}
+
+header{
+    height: 100%;
+    width: 70%;
+    padding: 50px 0 0 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1000px) {
+    header{
+        width: 80%;
+    }
+}
+
+.dp-logo{
+    height: 20vh;
+    width: 20vh;
+    position: relative;
+    top: 7vh;
+    left: 5vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: 2px solid red;
+
+}
+
+@media (max-width:1000px) {
+    .dp-logo{
+        height: 12vh;
+        width: 12vh;
+        position: relative;
+        top: 5vh;
+        left: 3vw;
+    }
+}
+
+.profile-info{
+    padding: 0 50px;
+}
+
+
+.name{
+    margin: 20px 0;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (max-width:700px) {
+    .name{
+        width: 90%;
+    }
+}
+
+@media (max-width:630px){
+    .name{
+        flex-direction: column;
+    }
+}
+
+.username{
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.message-btn{
+    background-color: white;
+    width: 50px;
+    border: 1px solid black;
+    height: 20px;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.follow-btn{
+    font-size: 0.7rem;
+    width: 50px;
+    background-color: rgb(0, 149, 255);
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width:900px) {
+    .buttons{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 2vw;
+    }
+    .message-btn, .follow-btn{
+        height: 3vh;
+    }
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+@media (max-width:950px) {
+    .stats{
+        width: 90%;
+        display: flex;
+        margin: 1vh 0;
+    }
+}
+
+@media (max-width:450px) {
+    .header{
+        width: 95vw;
+        padding: none;
+        margin: none;
+    }
+    .dp-logo{
+        height: 8vh;
+        width: 8vh;
+        position: relative;
+        top: 5vh;
+        left: 3vh;
+    }
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+
+.bio > *{
+    margin: 5px 0 0 0;
+}
+
+/* post containers */
+
+main{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5vh 0 10vh 0;
+
+}
+
+.post{
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 10px 0;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media (max-width:500px) {
+    main{width: 100%;}
+}

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8vh 0;
+    flex-direction: row-reverse;
+    background-color: #e8e8e8;
+    /* background-image: linear-gradient(to bottom right, rgba(255, 92, 255, 0.8),rgba(255, 255, 0, 0.6)); */
+}
+
+.main::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #0a0a0a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width:1200px) {
+    main{
+        flex-direction: column;
+    }
+}
+
+/*  *****************************************************| css for 'recent posts' |******************************************** */
+/* new posts css */
+.new-posts > *{
+    height: 100%;
+    width: 50vw;
+    margin: 50px 0;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(1px);
+    border-radius: 30px;
+    padding:0 0 20px 0;
+    /* border: 1px solid black; */
+    /* border: 5px solid black; */
+}
+
+@media (max-width:850px) {
+    .new-posts > *{
+        width: 95vw;
+    }
+}
+
+.post-head{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: .5% 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#ver-ell-icon{
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    transform: rotateZ(90deg);
+    cursor: pointer;
+}
+
+/* user profile picture */
+.profile-info{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-info a{
+    text-decoration: none;
+    color: black;
+    margin: 0 0 0 10%;
+    font-family: sans-serif;
+}
+
+#user-dp{
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+}
+
+.post-body{
+    height: 100%;
+    width: 100%;
+}
+/* post image */
+/*      post image code comes below   */
+.post-container{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9/7;
+}
+
+.post-container img{
+    height: 100%;
+    width: 100%;
+}
+
+/* like,share post  */
+.post-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3%;
+}
+
+.post-icons div i {
+    margin: 0 10px 0 0 ;
+}
+
+/* post description */
+.post-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 3%;
+}
+
+.post-desc p,small{
+    margin: 0 0 10px 0;
+    /* font-family: sans-serif; */
+}
+
+.post-footer{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.add-comment{
+    align-items: center;
+}
+
+.add-comment input{
+    border: none;
+    margin: 0 5px;
+    background-color: transparent;
+}
+
+.add-comment input:focus{
+    outline: none;
+}
+
+.blue-button{
+    height: 5vh;
+    width: 5vw;
+    background-color: transparent;
+    border: none;
+    /* font-family: sans-serif; */
+    font-weight: 600;
+    cursor: pointer;;
+    color: #00aaff88;
+}
+
+.blue-button-post{
+    height: 5vh;
+    width: 5vw;
+    background-color: transparent;
+    border: none;
+    /* font-family: sans-serif; */
+    font-weight: 600;
+    cursor: pointer;;
+    color: #00aaff88;
+}
+
+
+
+
+.blue-button-post:active{
+    color: blue;
+}
+
+
+
+/*  *****************************************************| css for 'suggested-profiles' |******************************************** */
+
+.suggested-profs{
+    color: #b0b0b0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    height: 50%;
+    width: 20%;
+    padding: 0.5%;
+    margin: 1%;
+    border-radius: 10px;
+    position: absolute;
+    top: 15vh;
+    right: 1vw;
+}
+
+
+.sugg-profile{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prof-info{
+    display: flex;
+    align-items: center;
+}
+
+.sugg-prof-dp{
+    height: 6vh;
+    width: auto;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.sugg-prof-name a{
+    color: black;
+    text-decoration: none;
+    font-family: 'helvetica-neue',sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+@media (max-width:1200px) {
+    .suggested-profs{
+        position: relative;
+        top: 2vh;
+        width: 50%;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: transparent;
+    }
+    .suggested-profs h4,.sugg-prof-name,.sugg-profile button,.suggested-profs hr{
+        display: none;
+    }
+    .sugg-prof-dp{
+        height: 10vh;
+        border-radius: 50%;
+        /* margin: 0 2vw 0 0; */
+    }
+}
+
+@media (max-width:850px) {
+    .suggested-profs{
+        width: 95vw;
+    }
+}

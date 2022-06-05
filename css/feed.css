@@ -1,0 +1,114 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 3vw 0;
+    height: 100%;
+    width: 60vw;
+    margin: auto;
+}
+
+.typea{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5vw;
+}
+
+.box-big{
+    height: 40vw;
+    width: 40vw;
+    margin: .5vw;
+}
+
+.box-smalls{
+    display: flex;
+    flex-direction: column;
+}
+
+.small{
+    height: 20vw;
+    width: 20vw;
+    margin: .5vw .5vw 0 0;
+}
+
+.reversed{
+    flex-direction: row-reverse;
+    margin: .5vw;
+}
+
+.small-reversed .small{
+    margin: .5vw .5vw 0 .5vw;
+}
+
+.typeb{
+    display: flex;
+}
+
+.boxa{
+    overflow: hidden;
+    height: 20vw;
+    width: 40vw;
+    margin: .5vw;
+}
+
+.boxb{
+    overflow: hidden;
+    margin: .5vw;
+    height: 20vw;
+    width: 20vw;
+}
+
+.feedimg{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    *{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100vw;
+        padding: 10vw 0 14vw 0;
+    }
+    .typea{
+        flex-direction: column;
+    }
+    .box-smalls{
+        flex-direction: row;
+    }
+    .reversed{
+        flex-direction: column-reverse;
+    }
+    .box-big{
+        height: 88vw;
+        width: 88vw;
+    }
+    .small{
+        height: 44vw;
+        width: 44vw;
+    }
+    .boxa{
+        width: 60vw;
+        height: 30vw;
+        margin: 0 0 0 4vw;
+    }
+    .boxb{
+        height: 30vw;
+        width: 30vw;
+        margin: .5vw;
+    }
+    .feedimg{
+        height: 98%;
+        width: 98%;
+    }
+} 
+
+.feedimg{
+    border-radius: 15px;
+}

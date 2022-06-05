@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicShare</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <main>
+        <div class="left">
+            <img src="assets/index-photo.png" id="pic">
+        </div>
+        <div class="right">
+            <div id="logo">PicShare</div>
+            <div class="loginform">
+                <div class="form">
+                    <small id="warning"><i class="fa-solid fa-triangle-exclamation"></i> password or username is wrong</small>
+                    <input type="text" placeholder="username" id="username">
+                    <input type="password" placeholder="password" id="password">
+                    <button id="login">Login</button>
+                </div>
+                <div class="signupform">
+                    <p>Don't have an account? <a href="signup.html" id="signup">sign up</a></p>
+                </div>
+            </div>
+    </main>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
